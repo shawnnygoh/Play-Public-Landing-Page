@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play & Public</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <ul>
+            <li><a href="#">OUR WORK</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+        <img src="img/play-and-public-logo-04.png" height = 40px>
+        <button><strong>SCHEDULE A CALL</strong></button>    
+    </div>
+
+    <div class="main">
+        <div>
+            <h1 class="greeting">WELCOME TO</h1> 
+            <h1><strong class="fancy">PLAY&</strong><small class="regular">PUBLIC</small></h1>
+            <p>We're a branding and web design 
+                studio based in Portland, OR. We love 
+                playful type, bold colors and joyful 
+                experiences.
+            </p>
+            <a href="#" id="call">Schedule a call ➡</a>
+        </div>
+        <div>
+            <img src="img/play-and-public-dedicated-to-the-world-04-04.png" alt="dedicated to the world" class="responsive">
+        </div>
+    </div>
+    <div class="more">
+        <img src="img/Arrow-down.svg.png" alt="more info" style="width:3%">
+    </div>
+
+    <span class="horizontal-line"></span>
+
+    <div class="top">
+        <head>OUR SERVICES<head>
+    </div>
+
+    <div class="services">
+        <div class="bottom">
+            <div class="block">
+                <img src="img/play-and-public-branding.png" alt="Branding" style="width:100%">
+                <p style="font-size: 30px;">BRANDING</p>
+                <p style="font-family: cursive;">We love you.
+                    <br>All of you.</p>
+                <p style="font-size: small;">Creating a brand is a holistic approach to your 
+                    business. The brands we create reflect the 
+                    goodness of the people we work with.</p>
+            </div>
+            <div class="block">
+                <img src="img/play-and-public-web-design.png" alt="Web Design" style="width:100%">
+                <p style="font-size: 30px;">WEB</p>
+                <p style="font-family: cursive;">We create websites 
+                    <br>that look real good.</p>
+                <p style="font-size: small;">We partner with you to create custom websites 
+                    that convert and leaves the user smiling. We 
+                    take your vision, amplify it and create a 
+                    digital presence anyone who enters will FEEL.</p>
+            </div>
+            <div class="block">
+                <img src="img/play-and-public-social.png" alt="Social" style="width:100%">
+                <p style="font-size: 30px;">SOCIAL</p>
+                <p style="font-family: cursive;">We know content 
+                    <br>is queen.</p>
+                <p style="font-size: small;">We start by taking a look at your social 
+                    presence, audience and competitors. Our 
+                    content truly is QUEEN.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // When the user scrolls the page, execute stickyFunction 
+        window.onscroll = function() {stickyFunction()};
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the header
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky")
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

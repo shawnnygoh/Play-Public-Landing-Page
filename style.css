@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Crooked;
+    src: url(Crooked.ttf.woff);
+}
+
+body {
+    background-color: #f6f5f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f6f5f0;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    font-size: 10px;
+}
+
+button {
+    padding: 8px;
+    color: #42302a;
+    background-color: #e3e2ce;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+}
+
+button:hover {
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 30px;
+    margin-bottom: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.greeting {
+    color: #3a211c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.fancy {
+    font-family: Crooked;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+#call {
+    color: black;
+    font-family: cursive;
+}
+
+.responsive {
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.horizontal-line {
+    border: 0.5px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.block {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+}
+
+.block p {
+    text-align: left;
+}
